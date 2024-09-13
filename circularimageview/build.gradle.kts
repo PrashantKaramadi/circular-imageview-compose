@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.jetbrains.kotlin.android)
+    id("maven-publish")
 }
 
 android {
@@ -54,4 +55,20 @@ dependencies {
     implementation (libs.androidx.material3) // Material 3
     implementation (libs.androidx.ui.tooling.preview) // For Previews
     debugImplementation (libs.androidx.ui.tooling) // For Preview support in Android Studio
+}
+publishing {
+    publications {
+        register<MavenPublication>("release") {
+            groupId = "com.pk"
+            artifactId = "circularimageview"
+            version = "1.0.0"
+
+            afterEvaluate {
+                from(components["release"])
+            }
+        }
+    }
+    repositories {
+        mavenLocal()
+    }
 }
