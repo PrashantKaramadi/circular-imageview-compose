@@ -21,7 +21,7 @@ Add the following to your `build.gradle` file:
 
 ```groovy
 dependencies {
-    implementation 'com.pk.circularimageview:circularimageview:1.0.0'
+    implementation "com.github.PrashantKaramadi:circular-imageview-compose:1.0.0"
 }
 ```
 ## Usage
