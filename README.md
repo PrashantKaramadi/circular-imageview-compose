@@ -72,6 +72,9 @@ fun NetworkProfileScreen() {
 }
 
 ```
+
+![circular_image](https://github.com/user-attachments/assets/ccea1333-29c3-477b-b1ed-1e3a383ea7f8)
+
 ## Parameters
 - **imageUrl (String?)**: URL of the image to load (for remote images). If null, the imageRes will be used.
 - **imageRes (Int?)**: Resource ID of the drawable image (for local images). If null and imageUrl is also null, a placeholder or error image will be used.
